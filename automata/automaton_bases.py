@@ -5,7 +5,6 @@ from .automaton_functions import *
 
 def base_square_automaton(board, automaton_fn, size_x, size_y, bound_x, bound_y, gen, alive_needed=[1]):
     new_board = board.copy()
-    print(bound_x, bound_y)
     for y in range(bound_y[0] - 1, bound_y[1] + 2):
         for x in range(bound_x[0] - 1, bound_x[1] + 2):
             if board[x][y] == 0:

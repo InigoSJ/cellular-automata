@@ -27,7 +27,7 @@ def main():
 
     while on:
         board.draw(WIDTH, HEIGHT, window)
-        # message_display(f'Generation {gen}', 20, 100, 50, window=window)
+        message_display(f'Generation {gen}', 20, 100, 50, window=window)
 
         time.sleep(PAUSE)
         board.automaton(BASE_AUTOMATON, AUTOMATON_FUNCTION, gen, alive_needed=[1])
